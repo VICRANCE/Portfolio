@@ -1,47 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+    background-color: #0e0e1a;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background: #333366;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #1a1a2e;
+    padding: 40px 0;
     text-align: center;
+    border-bottom: 2px solid #3a3a5a;
 }
 
-header nav ul {
-    list-style: none;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #00ffff;
+}
+
+header p {
+    color: #cccccc;
+    font-style: italic;
+}
+
+nav ul {
     padding: 0;
+    margin-top: 20px;
+    list-style: none;
 }
 
-header nav ul li {
-    display: inline;
+nav ul li {
+    display: inline-block;
     margin: 0 15px;
 }
 
-header nav ul li a {
-    color: #fff;
+nav ul li a {
+    color: #00ffff;
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff00cc;
 }
 
 section {
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 800px;
-    background: #fff;
-    margin-bottom: 10px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #1a1a2e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+h2 {
+    color: #00ffff;
+    border-bottom: 1px solid #3a3a5a;
+    padding-bottom: 10px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 3px solid #00ffff;
+    background-color: #252539;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+ul {
+    padding-left: 20px;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background: #333366;
-    color: #fff;
+    padding: 20px;
+    background: #1a1a2e;
+    color: #777;
+    border-top: 2px solid #3a3a5a;
 }
