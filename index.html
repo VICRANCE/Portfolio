@@ -1,70 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Victor Akpan | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Final Project</title>
 </head>
 <body>
+
     <header>
-        <h1>Victor Akpan</h1>
-        <p>IT Executive | Graphics Designer | Website Designer</p>
-        <nav>
+        <nav class="nav__bar" id="navbar">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="nav__links" href="#welcome-section">About</a></li>
+                <li><a class="nav__links" href="#projects">Work</a></li>
+                <li><a class="nav__links" href="#contact">Contact</a></li>
             </ul>
         </nav>
+
+        <section class="section__first" id="welcome-section">
+
+            <h1 class="section__h1">Hey I am Ghady</h1>
+            <p class="section__p">a web developper</p>
+
+        </section>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Full-Stack IT Executive, Graphics Designer and Website Designer passionate about building efficient, user-focused solutions and striking visual content.</p>
-    </section>
+    <main>
+        <section class="section__projects" id="projects">
+            <h2>These are some of my projects</h2>
+            <div class="projects__div">
+                <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project-tile">
+                    <img class="projects__images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+                    <p class="projects__p">Tribute Page</p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project-tile">
+                    <img class="projects__images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png">
+                    <p class="projects__p">Random Quote Machine</p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project-tile">
+                    <img class="projects__images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png">
+                    <p class="projects__p">Javascipt Calculator</p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project-tile">
+                    <img class="projects__images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg">
+                    <p class="projects__p">Map Across The Globe</p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="project-tile">
+                    <img class="projects__images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png">
+                    <p class="projects__p">Wikipedia Viewer</p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project-tile">
+                    <img class="projects__images" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png">
+                    <p class="projects__p">Tic Tac Toe Game</p>
+                </a>
+            </div>
+            <div class="div__button">
+                <button class="projects__button">Show all &nbsp;&nbsp;></button>
+            </div>
+        </section>
+    </main>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Graphics Design: Adobe Illustrator, CorelDraw</li>
-            <li>Website Design: HTML, CSS, WordPress</li>
-            <li>Full-Stack: Software & Hardware Integration</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Graphic Design Campaign</h3>
-            <p>Designed posters and flyers to communicate brand messages and promote events.</p>
+    <section class="section__contact" id="contact">
+        <div class="contact__header">
+            <h2 class="contact__h2">Let's work together...</h2>
+            <p class="contact__p">How do you take your coffee?</p>
         </div>
-        <div class="project">
-            <h3>Website Design</h3>
-            <p>Built and maintained a responsive WordPress site for organizations.</p>
+        <div class="contact__links">
+            <a href="https://www.facebook.com/freecodecamp" id="profile-link" target="_blank">Facebook</a>
+            <a href="https://github.com/freecodecamp" id="profile-link" target="_blank">Github</a>
+            <a href="https://twitter.com/freecodecamp" id="profile-link" target="_blank">Twitter</a>
+            <a href="mailto:example@example.com" id="profile-link" target="_blank">Send an Email</a>
+            <a href="tel: 555-555-5555 id="profile-link" target="_blank"">Call me</a>
         </div>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li>IT Executive – Zeekam Global</li>
-            <li>Graphic Designer – Best Treat</li>
-            <li>Field IT Personnel – JetWeb</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: rancevictor00@gmail.com</p>
-        <p>GitHub: github.com/VICRANCE</p>
-        <p>LinkedIn: linkedin.com/in/victor-akpan</p>
-    </section>
-
-    <footer>
-        <p>© 2025 Victor Akpan</p>
+    <footer class="footer">
+        <p class="wrap inline">**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+        <p class="wrap inline">&copy; Created for <a class="footer__link" href="https://freecodecamp.org/">freeCodeCamp</a></p>
     </footer>
+
+    
 </body>
 </html>
